@@ -1,0 +1,27 @@
+footer{
+    width: 100vw;
+    border-top: 1px solid teal;
+    text-align: center;
+    /* background: rgba(0, 0, 0, 0.508); */
+    flex: 0 0 60px;
+    color: white;
+    display: flex;
+    justify-content: flex-end;
+}
+
+footer form {
+    display: flex;
+    align-items: center;
+    margin-right: 100px;
+}
+
+footer form input, footer form textarea, footer form button{
+    height: 33px;
+    margin: 0 5px;
+    background: none;
+    border: 1px solid #fff;
+    color: #fff;
+    padding: 0 5px;
+    outline: none;
+}
+

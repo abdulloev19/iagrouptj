@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>IA GROUP</title>
+    <!-- <link
+      href="https://fonts.googleapis.com/css2?family=Playfair+Display+SC:wght@400;700&family=Roboto:wght@100;400&display=swap"
+      rel="stylesheet"
+    /> -->
+    <link rel="stylesheet" href="css/main.css" />
+  </head>
+  <body>
+    <div class="iagroup" id="iagroup" @scroll="onScroll($event)">
+      <smsbox></smsbox>
+      <header-top></header-top>
+      <div class="main_index"><router-view></router-view></div>
+
+      <footer id="footer">
+        <form name="contact" method="POST" data-netlify="true">
+          <p>
+            <input type="text" name="name" placeholder="Ваша имя" />
+          </p>
+          <p>
+            <input type="email" name="email" placeholder="Ваш Email" />
+          </p>
+            <textarea name="message" placeholder="Ваш комментарий"></textarea>
+          <p>
+            <button type="submit">Отправить</button>
+          </p>
+        </form>
+      </footer>
+    </div>
+
+    <script src="js/vue.global.prod.js"></script>
+    <script src="js/vue.router.global.js"></script>
+    <script type="module" src="js/main.js"></script>
+  </body>
+</html>
